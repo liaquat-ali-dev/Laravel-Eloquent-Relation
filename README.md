@@ -19,8 +19,8 @@ In a one-to-one relationship, each record in one table is associated with exactl
 
 ## Use Cases
 
-- User profile: Each user has exactly one profile.
-- Employee record: Each employee has a single personal information record.
+- Each car has exactly one registration.
+- Each registration belongs to only one car.
 
 ## Best Practices
 
