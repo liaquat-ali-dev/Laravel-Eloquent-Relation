@@ -138,7 +138,7 @@ In summary, the difference is in the number of related records that can be acces
 
 ## "Follow me if you find this documentation valuable."
 
-## Follow me on Medium
-[Liaquat Ali](https://medium.com/@liaquat-ali-dev).
+## Follow me on other platforms
+[Medium](https://medium.com/@liaquat-ali-dev). [Linkedin](https://www.linkedin.com/in/liaquat-ali-dev/). 
 
 ## Created by Liaquat Ali
