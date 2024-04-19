@@ -66,4 +66,30 @@ Many-to-many relationships indicate that multiple records in one table can be as
 - tags Table
 - post_tag Table (Pivot Table)
 
-## Liaquat Ali
+
+## Laravel Eloquent hasOneThrough Relation
+
+## Introduction
+
+The hasOneThrough relationship in Laravel's Eloquent ORM allows you to define a relationship that spans through another relationship. This documentation outlines the usage of the hasOneThrough relationship for the profiles, countries, and users tables.
+
+## Definition
+
+In a hasOneThrough relationship, a model obtains a related model through another intermediate relationship. It allows you to access data from a distant relationship through intermediate ones.
+
+## Use Case
+
+We want to establish a hasOneThrough relationship to access a user's country through their profile.
+
+
+## Tables
+
+- profiles Table
+- countries Table
+- users Table
+
+With the hasOneThrough relationship, you can seamlessly access a user's country through their profile. Adjust the code as needed based on your application's requirements.
+
+
+
+## Created by Liaquat Ali
