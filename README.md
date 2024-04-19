@@ -8,6 +8,10 @@ Laravel's Eloquent ORM facilitates the definition and management of relationship
 - One-to-One.
 - One-to-Many.
 - Many-to-Many.
+- Has One  Through.
+- Has Many Through.
+
+
 
 This documentation provides an overview of each relationship type, including definitions, use cases, and best practices.
 
