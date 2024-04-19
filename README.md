@@ -2,7 +2,6 @@
 
 ## Introduction
 
-
 Laravel's Eloquent ORM facilitates the definition and management of relationships between database tables. These relationships simplify data retrieval and manipulation, enhancing code readability and maintainability. There are three primary types of relationships supported by Eloquent:
 
 - One-to-One.
@@ -10,8 +9,6 @@ Laravel's Eloquent ORM facilitates the definition and management of relationship
 - Many-to-Many.
 - Has-One-Through.
 - Has-sMany-Through.
-
-
 
 This documentation provides an overview of each relationship type, including definitions, use cases, and best practices.
 
@@ -30,7 +27,6 @@ In a one-to-one relationship, each record in one table is associated with exactl
 
 - Utilize when a strict one-to-one correspondence exists between entities.
 - Use when data normalization is required to reduce redundancy.
-
 
 ## One-to-Many Relationship
 
@@ -70,7 +66,6 @@ Many-to-many relationships indicate that multiple records in one table can be as
 - tags Table
 - post_tag Table (Pivot Table)
 
-
 ## Laravel Eloquent hasOneThrough Relation
 
 ## Introduction
@@ -85,7 +80,6 @@ In a hasOneThrough relationship, a model obtains a related model through another
 
 We want to establish a hasOneThrough relationship to access a user's country through their profile.
 
-
 ## Tables
 
 - profiles Table
@@ -94,6 +88,55 @@ We want to establish a hasOneThrough relationship to access a user's country thr
 
 With the hasOneThrough relationship, you can seamlessly access a user's country through their profile. Adjust the code as needed based on your application's requirements.
 
+## Laravel Eloquent hasManyThrough Relation
 
+## Introduction
+
+The hasManyThrough relationship in Laravel's Eloquent ORM allows you to define a relationship that involves a direct association between two models through an intermediate one. This documentation outlines the usage of the hasManyThrough relationship for the grandparents, parents, and children tables.
+
+## Use Case
+
+We want to establish a hasManyThrough relationship to retrieve all children associated with a grandparent directly.
+
+## Tables
+
+- grandparents Table
+- parents Table
+- children Table
+
+With the hasManyThrough relationship, you can seamlessly access all children associated with a grandparent directly through the intermediate Parent model. Adjust the code as needed based on your application's requirements.
+
+## Question
+
+## What's the difference between hasOneThrough and hasManyThrough ?
+
+The difference between hasOneThrough and hasManyThrough lies in the cardinality of the relationship they represent in a database schema:
+
+## 1:hasOneThrough:
+In this type of relationship, a model has exactly one related record through another intermediate model. It implies a one-to-one relationship through the intermediate model.
+
+## 2:hasManyThrough:
+In this type of relationship, a model has many related records through another intermediate model. It implies a one-to-many relationship through the intermediate model.
+
+Let's illustrate this with an example:
+
+Consider three models/entities: Country, State, and City.
+
+A Country has many States.
+A State belongs to a single Country.
+A State has many Cities.
+A City belongs to a single State.
+With hasOneThrough and hasManyThrough:
+
+Country hasOneThrough City: This might imply that a Country has a single "representative" City that serves as its capital, for example. So, each Country has exactly one City through its State.
+Country hasManyThrough City: This could represent that a Country has multiple major cities through its States. Each State has multiple Cities, and there are multiple States in a Country.
+In summary, the difference is in the number of related records that can be accessed through the intermediate model: one for hasOneThrough and many for hasManyThrough.
+
+#### "Shortly, I'll be implementing a polymorphic relation, ensuring comprehensive documentation accompanies the process."
+
+## "Follow me if you find this documentation valuable."
+
+## Follow me on Medium
+[](https://opensource.org/licenses/MIT).
 
 ## Created by Liaquat Ali
