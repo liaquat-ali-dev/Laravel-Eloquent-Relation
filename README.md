@@ -8,7 +8,7 @@ Laravel's Eloquent ORM facilitates the definition and management of relationship
 - One-to-Many.
 - Many-to-Many.
 - Has-One-Through.
-- Has-sMany-Through.
+- Has-Many-Through.
 
 This documentation provides an overview of each relationship type, including definitions, use cases, and best practices.
 
@@ -112,10 +112,12 @@ With the hasManyThrough relationship, you can seamlessly access all children ass
 
 The difference between hasOneThrough and hasManyThrough lies in the cardinality of the relationship they represent in a database schema:
 
-## 1:hasOneThrough:
+## 1:hasOneThrough
+
 In this type of relationship, a model has exactly one related record through another intermediate model. It implies a one-to-one relationship through the intermediate model.
 
-## 2:hasManyThrough:
+## 2:hasManyThrough
+
 In this type of relationship, a model has many related records through another intermediate model. It implies a one-to-many relationship through the intermediate model.
 
 ## example
@@ -139,6 +141,7 @@ In summary, the difference is in the number of related records that can be acces
 ## "Follow me if you find this documentation valuable."
 
 ## Follow me on other platforms
-[Medium](https://medium.com/@liaquat-ali-dev). [Linkedin](https://www.linkedin.com/in/liaquat-ali-dev/). 
+
+[Medium](https://medium.com/@liaquat-ali-dev). [Linkedin](https://www.linkedin.com/in/liaquat-ali-dev/).
 
 ## Created by [Liaquat Ali](https://github.com/liaquat-ali-dev)
