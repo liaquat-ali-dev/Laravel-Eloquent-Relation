@@ -118,6 +118,8 @@ In this type of relationship, a model has exactly one related record through ano
 ## 2:hasManyThrough:
 In this type of relationship, a model has many related records through another intermediate model. It implies a one-to-many relationship through the intermediate model.
 
+## example
+
 Let's illustrate this with an example:
 
 Consider three models/entities: Country, State, and City.
