@@ -141,4 +141,4 @@ In summary, the difference is in the number of related records that can be acces
 ## Follow me on other platforms
 [Medium](https://medium.com/@liaquat-ali-dev). [Linkedin](https://www.linkedin.com/in/liaquat-ali-dev/). 
 
-## Created by Liaquat Ali
+## Created by [Liaquat Ali](https://github.com/liaquat-ali-dev)
