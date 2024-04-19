@@ -27,6 +27,24 @@ In a one-to-one relationship, each record in one table is associated with exactl
 - Utilize when a strict one-to-one correspondence exists between entities.
 - Use when data normalization is required to reduce redundancy.
 
+
+## One-to-Many Relationship
+
+## Definition
+
+A one-to-many relationship signifies that each record in one table can be associated with multiple records in another table.
+
+## Use Cases
+
+- An author can have multiple books.
+- Each book is authored by a single author.
+
+## Use Cases
+
+- Apply when one entity can have multiple related instances.
+-   Suitable for hierarchical data structures where a parent entity manages subordinate entities.
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
