@@ -139,6 +139,6 @@ In summary, the difference is in the number of related records that can be acces
 ## "Follow me if you find this documentation valuable."
 
 ## Follow me on Medium
-[](https://opensource.org/licenses/MIT).
+[Liaquat Ali](https://medium.com/@liaquat-ali-dev).
 
 ## Created by Liaquat Ali
