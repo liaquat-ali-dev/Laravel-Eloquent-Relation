@@ -8,8 +8,8 @@ Laravel's Eloquent ORM facilitates the definition and management of relationship
 - One-to-One.
 - One-to-Many.
 - Many-to-Many.
-- Has One  Through.
-- Has Many Through.
+- Has-One-Through.
+- Has-sMany-Through.
 
 
 
