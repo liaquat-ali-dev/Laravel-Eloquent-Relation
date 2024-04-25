@@ -136,7 +136,7 @@ Country hasOneThrough City: This might imply that a Country has a single "repres
 Country hasManyThrough City: This could represent that a Country has multiple major cities through its States. Each State has multiple Cities, and there are multiple States in a Country.
 In summary, the difference is in the number of related records that can be accessed through the intermediate model: one for hasOneThrough and many for hasManyThrough.
 
-## Database file https://github.com/liaquatalidev/relations-database-file
+## Database file [Click here](https://github.com/liaquatalidev/relations-database-file)
 
 #### "Shortly, I'll be implementing a polymorphic relation, ensuring comprehensive documentation accompanies the process."
 
